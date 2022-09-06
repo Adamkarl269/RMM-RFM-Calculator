@@ -1,0 +1,96 @@
+GridLayout:
+    cols: 1
+    size: root.width, root.height
+
+    GridLayout:
+        cols: 1
+
+        Label:
+            id: top_label
+            text: "Enter 0 if there is no element to be inputted"
+
+    BoxLayout:
+        orientation: "vertical"
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_one
+                text: "Enter the first element"
+
+            TextInput:
+
+                id: input_one
+                multiline: False
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_one_one
+                text: "Enter the amount of first element"
+
+            TextInput:
+
+                id: input_one_one
+                multiline: False
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_two
+                text: "Enter the second element"
+
+            TextInput:
+
+                id: input_two
+                multiline: False
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_two_two
+                text: "Enter the amount of second element"
+
+            TextInput:
+
+                id: input_two_two
+                multiline: False
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_three
+                text: "Enter the third element"
+
+            TextInput:
+
+                id: input_three
+                multiline: False
+
+        GridLayout:
+            cols: 2
+
+            Label:
+
+                id: label_three_three
+                text: "Enter the amount of third element"
+
+            TextInput:
+
+                id: input_three_three
+                multiline: False
+
+    Button:
+
+        text: "Calculate"
+        on_press: app.cal()
